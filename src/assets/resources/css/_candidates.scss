@@ -1,0 +1,256 @@
+/********************
+  CANDIDATES LISTING
+*********************/
+
+.candidates-listing-bg {
+    padding: 210px 0px 60px 0px;
+    background-image: url("../images/candidates-listing-bg.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+
+.custom-checkbox {
+    .custom-control-input {
+        &:checked~.custom-control-label {
+            &:before {
+                background-color: $custom;
+                border-color: $custom;
+            }
+        }
+        &:focus~.custom-control-label {
+            &:before {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.candidates-img {
+    img {
+        max-width: 90px;
+    }
+}
+
+.fav-icon {
+    i {
+        -webkit-text-stroke: 2px $custom;
+        -webkit-text-fill-color: transparent;
+        &:hover {
+            -webkit-text-stroke: 0px $custom;
+            -webkit-text-fill-color: $custom;
+        }
+    }
+}
+
+.candidates-list-desc {
+    overflow: hidden;
+}
+
+.candidates-right-details {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.candidates-item-desc {
+    margin-left: 45px;
+}
+
+
+/********************
+  CANDIDATES PROFILE
+*********************/
+
+.candidates-profile-bg {
+    padding: 180px 0px 80px 0px;
+    background-image: url("../images/candidates-profile-bg.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+
+.candidates-profile-details {
+    img {
+        max-width: 130px;
+        background: transparent;
+    }
+}
+
+.candidates-profile-details {
+    .candidates-profile-name {
+        font-weight: 300;
+    }
+}
+
+.candidates-profile-icons {
+    .list-inline-item {
+        margin: 0 1px !important;
+    }
+}
+
+.candidates-profile-social-icons {
+    li {
+        a {
+            height: 32px;
+            width: 32px;
+            color: rgba(255, 255, 255, .7);
+            text-align: center;
+            font-size: 15px;
+            display: inline-block;
+            line-height: 30px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, .7);
+            transition: all 0.5s;
+            &:hover {
+                background-color: $custom;
+                color: $white;
+                transition: all 0.5s;
+                border-color: $custom;
+            }
+        }
+    }
+}
+
+.profile-education-icon {
+    border: 1px solid darken($light, 4%);
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 42px;
+    border-radius: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: $white;
+    color: $custom;
+    transition: all 0.5s;
+}
+
+.candidates-profile-education {
+    padding: 64px 24px 24px;
+    &:hover {
+        .profile-education-icon {
+            background-color: $custom;
+            border: 1px solid $custom;
+            color: $white;
+            transition: all 0.5s;
+        }
+    }
+}
+
+
+/********************
+  CANDIDATES RESUME
+*********************/
+
+.create-resume-bg {
+    padding: 180px 0px 80px 0px;
+    background-image: url("../images/create-resume-bg.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+
+.resume-user {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 66px;
+    border-radius: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: darken($light, 5%);
+    color: $custom;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.form-control {
+    border: 1px solid darken($light, 5%);
+    &:focus {
+        box-shadow: none;
+        background-color: $light;
+        border: 1px solid #80bdff !important;
+    }
+    .resume {
+        border: 1px solid darken($light, 20%);
+        padding: 8px 14px;
+        font-size: 14px
+    }
+}
+
+.nice-select:active,
+.nice-select.open,
+.nice-select:focus {
+    border-color: #80bdff;
+}
+
+.form-button {
+    .nice-select {
+        width: 100%;
+        height: 39px;
+        line-height: 37px;
+        color: #6b757d;
+        margin-bottom: 1rem;
+        border: solid 1px darken($light, 5%);
+        &.open {
+            .list {
+                width: 100%
+            }
+        }
+    }
+}
+
+.skills {
+    &.chart {
+        position: relative;
+        display: inline-block;
+        width: 130px;
+        height: 130px;
+        text-align: center;
+    }
+    .pie-chart-value {
+        display: inline-block;
+        line-height: 130px;
+        font-size: 24px;
+    }
+}
+
+.chart {
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+    .candidates-item-desc {
+        margin-left: 5px;
+    }
+    .candidates-profile-exp-desc {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .fav-icon {
+        position: absolute;
+        left: 0;
+        right: 200px;
+    }
+    .candidates-list-fav-btn {
+        text-align: center !important;
+    }
+    .candidates-listing-btn {
+        margin-top: 13px !important
+    }
+}

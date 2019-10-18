@@ -1,0 +1,51 @@
+
+
+.footer {
+    background: $kpurple;
+}
+
+.footer-desc,
+.copyright {
+    color: $kblue;
+}
+
+.footer-icons {
+    li {
+        a {
+            height: 36px;
+            width: 36px;
+            color: $muted;
+            text-align: center;
+            font-size: 14px;
+            display: inline-block;
+            line-height: 32px;
+            border-radius: 50%;
+            border: 2px solid $muted;
+            transition: all 0.5s;
+            &:hover {
+                color: $white;
+                border-color: $white;
+            }
+        }
+    }
+}
+
+.footer-list-menu {
+    li {
+        a {
+            color: $muted;
+            font-size: 14px;
+            margin-bottom: 18px;
+            display: inline-block;
+            transition: all 0.5s;
+            &:hover {
+                color: #c0c0c0;
+            }
+            
+        }
+    }
+}
+
+.footer-alt {
+    background: $kpurple;
+}

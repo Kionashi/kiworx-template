@@ -1,0 +1,86 @@
+
+
+.section {
+    padding-bottom: 80px;
+    padding-top: 80px;
+    position: relative;
+}
+
+.bg-overlay {
+    background-color: #000;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+.f-12 {
+    font-size: 12px;
+}
+
+.f-13 {
+    font-size: 13px;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.f-15 {
+    font-size: 15px;
+}
+
+.f-16 {
+    font-size: 16px;
+}
+
+.f-17 {
+    font-size: 17px;
+}
+
+.f-18 {
+    font-size: 18px;
+}
+
+.f-19 {
+    font-size: 19px;
+}
+
+.f-20 {
+    font-size: 20px;
+}
+
+
+/* title */
+
+.title-icon:before {
+    content: "";
+    position: absolute;
+    width: 122px;
+    height: 2px;
+    background: $custom;
+    left: 0px;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px auto;
+}
+
+.modal-dialog {
+    max-width: 420px
+}
+
+.sing-form-icon {
+    padding: 9px 14px;
+}
+
+.close-btn:focus {
+    outline: none;
+}
+
+.form-bg .modal {
+    background: rgba(0, 0, 0, 0.35);
+}

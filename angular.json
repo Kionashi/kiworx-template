@@ -24,9 +24,26 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/resources/css/bootstrap.min.css",
+              "src/assets/resources/css/materialdesignicons.min.css",
+              "src/assets/resources/css/fontawesome.css",
+              "src/assets/resources/css/selectize.css",
+              "src/assets/resources/css/owl.carousel.css",
+              "src/assets/resources/css/owl.theme.css",
+              "src/assets/resources/css/owl.transitions.css",
+              "src/assets/resources/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/resources/js/jquery.min.js",
+              "src/assets/resources/js/bootstrap.bundle.min.js",
+              "src/assets/resources/js/jquery.easing.min.js",
+              "src/assets/resources/js/plugins.js",
+              "src/assets/resources/js/selectize.min.js",
+              "src/assets/resources/js/jquery.nice-select.min.js",
+              "src/assets/resources/js/owl.carousel.min.js",
+              "src/assets/resources/js/app.js",
+              "src/assets/resources/js/home.js"
+            ]
           },
           "configurations": {
             "production": {

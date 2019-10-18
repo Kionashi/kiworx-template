@@ -1,0 +1,41 @@
+
+/*
+Template Name: Joobsy - Responsive Job Listing Template
+Author: Themesdesign
+File: main stylesheet
+*/
+
+/**********************
+01.General
+02.helper
+03.components
+04.menu
+05.default
+06.home
+07.footer
+08.subscribe
+09.jobs
+10.candidates
+11.employers
+12.blog
+13.pages
+14.contact
+15.post-a-job
+**********************/
+
+@import "variables";
+@import "general";
+@import "helper";
+@import "components";
+@import "menu";
+@import "default";
+@import "home";
+@import "footer";
+@import "subscribe";
+@import "jobs";
+@import "candidates";
+@import "employers";
+@import "blog";
+@import "pages";
+@import "contact";
+@import "post-a-job";

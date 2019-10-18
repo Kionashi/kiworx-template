@@ -1,0 +1,33 @@
+//
+// variables.scss
+//
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Rubik:300,400,500');
+
+// Color variables
+$white:                     #ffffff;
+$black:                     #000000;
+
+$custom:                    #cc3ba0;
+
+$primary:                   #67a8e4;
+$success:                   #4ac18e;
+$info:                      #3bc3e9;
+$warning:                   #ffbb44;
+$danger:                    #ea553d;
+$dark:                      #343a40;
+$muted:                     #777777;
+$light:                     #f6f6f6;
+$kblue:                     #3be2ab;
+$kpurple:                   #6b42ce;
+$kpink:                     #cc3ba0;
+
+// Body Background
+$body-bg:                   #f5f5f5;
+
+// Base font
+$font-size-base:              14px;
+
+$font-family-base:            'Roboto', sans-serif;
+$font-family-secondary:       'Rubik', sans-serif;

@@ -1,0 +1,364 @@
+
+
+/********************
+      ABOUT US
+*********************/
+
+.about-bg {
+    padding: 180px 0px 80px 0px;
+    background-image: url("../images/about-bg.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+
+.blog-post-border {
+    width: 80px;
+    height: 2px;
+    background-color: darken($light, 4%);
+}
+
+.bolg-post-icon {
+    li {
+        a {
+            color: $muted;
+            transition: all 0.5s;
+            &:hover {
+                color: $custom;
+            }
+        }
+    }
+}
+
+.nav-pills .nav-link.about-us.active,
+.nav-pills .show>.nav-link.about-us {
+    background-color: rgba(0, 123, 255, 0);
+}
+
+.nav-link:hover .blog-post-overlay,
+.nav-link.active .blog-post-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: .25rem;
+    transition: all 0.5s;
+}
+
+.blog-post-testi-img {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.blog-post-testi-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    opacity: 0;
+    transition: 0.5s
+}
+
+.nav-link:hover .blog-post-testi-icon,
+.nav-link.active .blog-post-testi-icon {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.counter-bg {
+    padding: 80px 0px 0px;
+    background-image: url("../images/counter-bg.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.app-btn {
+    padding: 6px 10px;
+    border-color: $white;
+    color: $white;
+    text-transform: none;
+}
+
+.app-btn:hover,
+.app-btn:focus,
+.app-btn:active,
+.app-btn.active,
+.app-btn.focus,
+.app-btn:active,
+.app-btn:focus,
+.app-btn:hover,
+.open > .dropdown-toggle.app-btn {
+    border-color: $custom;
+}
+
+
+
+/********************
+      SERVICE
+*********************/
+
+.services-bg {
+    padding: 180px 0px 80px 0px;
+    background-image: url("../images/services-bg.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+
+.service-icon {
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: rgba(255, 79, 107, 0.05);
+    width: 86px;
+    height: 90px;
+    line-height: 108px;
+    text-align: center;
+    -webkit-text-stroke: 1px $custom;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-overlay {
+    position: absolute;
+    transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    padding: 10px;
+    top: 0;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    background: rgba(18, 18, 19, 0.6) !important;
+    border-radius: .25rem!important;
+}
+
+.service-info-img {
+    &:hover {
+        .service-overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.service-info-img {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.service-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+
+
+/********************
+        TEAM
+*********************/
+
+.team-bg {
+    padding: 180px 0px 80px 0px;
+    background-image: url("../images/team-bg.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+
+.team-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-name {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 10px;
+}
+
+.team-img {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+
+
+/********************
+        FAQ 
+*********************/
+
+.faq-bg {
+    padding: 180px 0px 80px 0px;
+    background-image: url("../images/faq-bg.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+
+.form-control {
+    &.faq-search {
+        border: 1px solid darken($light, 4%);
+        padding: 10px 14px;
+        background-color: $light;
+    }
+}
+
+.faq-border {
+    border: 1px solid $custom;
+    max-width: 70px;
+}
+
+.faq-item {
+    .card-header {
+        padding: 3px 22px 0px 2px;
+        border: none;
+        color: $muted;
+    }
+}
+
+.faq {
+    position: relative;
+}
+
+
+.faq-item {
+    &.accordion {
+        .card {
+            border: none;
+            border-bottom: 1px solid darken($light, 6%) !important;
+        }
+    }
+}
+
+.faq-content {
+    .card-body {
+        padding: 15px 45px 15px 2px;
+        transition: all 0.5s;
+        border-bottom: 1px solid $custom;
+    }
+}
+
+
+a {
+    &.faq[data-toggle=collapse] {
+        transition: all 0.5s;
+        &:before {
+            content: '\F143';
+            display: block;
+            font-family: 'Material Design Icons';
+            font-size: 20px;
+            color: $custom;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &.collapsed {
+            background-color: $white;
+            color: $muted;
+            margin-bottom: 18px;
+            transition: all 0.5s;
+            &:before {
+                content: '\F140';
+                color: $muted;
+                transition: all 0.5s;
+            }
+        }
+    }
+}
+
+
+
+/********************
+        PRICING  
+*********************/
+
+.pricing-bg {
+    padding: 180px 0px 80px 0px;
+    background-image: url("../images/pricing-bg.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+
+.pricing-box {
+    &:hover {
+        .pricing-plan-item {
+            li {
+                i {
+                    color: $custom;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+    .price {
+        span {
+            font-size: 54px;
+        }
+    }
+}
+
+.pricing-plan-item {
+    li {
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+.pricing-btn {
+    padding: 4px 8px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.cta-bg {
+    background-image: url("../images/cta-bg.jpg");
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+
+/********************
+        MODAL 
+*********************/
+
+.modal-dialog {
+    max-width: 420px
+}
+
+.sing-form-icon {
+    padding: 9px 14px;
+}
+
+.close-btn {
+    &:focus {
+        outline: none;
+    }
+}
+
+.form-bg {
+    .modal {
+        background: rgba(0, 0, 0, 0.35);
+    }
+}

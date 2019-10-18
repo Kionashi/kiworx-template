@@ -1,0 +1,84 @@
+
+
+#topnav {
+    .has-submenu {
+        &.active {
+            .submenu {
+                li{
+                    &.active {
+                        > a {
+                            color: $custom;
+                        }
+                    }
+                }
+            }
+            .menu-arrow {
+                border-color: $custom;
+            }
+        }
+    }
+
+    .navbar-toggle {
+        &.open {
+            span {
+                &:hover {
+                    background-color: $custom;
+                }
+            }
+        }
+    }
+    &.scroll {
+        .navigation-menu {
+            > li {
+                &:hover {
+                    > a {
+                        color: $custom !important;
+                    }    
+                }
+            }
+        }
+    }
+    .navigation-menu {
+        > li {
+            &:hover {
+                > .menu-arrow {
+                    border-color: $custom;
+                }
+            }
+        }
+        .submenu.open {
+            .has-submenu {
+                &.open {
+                    > a {
+                        color: $custom;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.title-section .breadcrumb > .active {
+    color: $custom;
+}
+
+#topnav .navigation-menu > li .submenu li a:hover,
+#topnav .navigation-menu .has-submenu .submenu > li:hover > a {
+    color: $custom;
+    margin-left: 8px;
+}
+
+#topnav .navigation-menu > li > a:hover,
+#topnav .navigation-menu > li .submenu li a:hover,
+#topnav .navigation-menu > li.has-submenu.open > a,
+#topnav .menu-extras .menu-item .cart > a:hover,
+#topnav .menu-extras .menu-item .search > a:hover {
+    color: $custom;
+}
+
+
+#topnav.bg-transparent .navigation-menu > li:hover > a,#topnav.bg-transparent .has-submenu.active a,
+#topnav.bg-transparent .has-submenu.active .submenu li.active > a,
+#topnav.bg-transparent .navigation-menu > li .submenu li a:hover{
+    color: $custom !important;
+}

@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kiworx - Meeting talents with challenges</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Themesdesign" />
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Rubik:400,500" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!--Material Icon -->
+    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css" />
+
+    <!-- selectize css -->
+    <link rel="stylesheet" type="text/css" href="css/selectize.css" />
+
+    <!--Slider-->
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.css" />
+    <link rel="stylesheet" href="css/owl.transitions.css" />
+
+    <!-- Custom  Css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar-->
+    <header id="topnav" class="defaultscroll scroll-active">
+        <div class="tagline">
+            <div class="container">
+                <div class="float-left">
+                    <div class="phone">
+                        <!-- <i class="mdi mdi-phone-classic"></i> +1 800 123 45 67 -->
+                    </div>
+                    <div class="email">
+                        <a href="contact.html">
+                            <i class="mdi mdi-email"></i> Contáctanos
+                        </a>
+                    </div>
+                </div>
+                <div class="float-right">
+                    <ul class="topbar-list list-unstyled d-flex" style="margin: 11px 0px;">
+                        <li class="list-inline-item"><a href="javascript:void(0);"><i class="mdi mdi-account mr-2"></i>Homer J Simpson</a></li>
+                        <li class="list-inline-item">
+                            <a href="javascript:void(0);">
+                                <select id="select-lang" class="demo-default" placeholder="Language">
+                                    <option value="1">Español</option>
+                                    <option value="2">English</option>
+                                </select>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- Logo container-->
+            <div>
+                <a href="index.html" class="logo">
+                    <img src="images/logo-light.png" alt="" class="logo-light" height="28" />
+                    <img src="images/logo-dark.png" alt="" class="logo-dark" height="28" />
+                </a>
+            </div>
+            <!-- End Logo container-->
+            <div class="menu-extras">
+
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+
+            <div id="navigation">
+
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu">
+
+                    <li class="has-submenu">
+                        <a href="employers-list.html">Startups</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="job-list.html">Ofertas</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Acceso</a>
+                        <span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#ModalCenter" class="nav-link" data-toggle="modal" data-target="#ModalCenter">Startups</a>
+                            </li>
+                            <li>
+                                <a href="#ModalCenter1" class="nav-link" data-toggle="modal" data-target="#ModalCenter1">Candidatos</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="contact.html">Elenius</a>
+                    </li>
+                    <a href="post-a-job.html" class="btn btn-custom btn-sm"><i class="mdi mdi-cloud-upload"></i> Publica una oferta</a>
+                </ul>
+                <!-- End navigation menu-->
+            </div>
+        </div>
+    </header>
+    <!-- End Navigation Bar-->
+
+    <!-- LOG IN FORM START -->
+    <section class="form-bg">
+        <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">LOG IN</h5>
+                        <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="custom-form mt-4">
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-account text-muted f-17"></i>
+                                            <input name="name" id="name" type="text" class="form-control blog-details f-15 pt-2" placeholder="Username" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-lock text-muted f-17"></i>
+                                            <input name="Password" id="Password" type="Password" class="form-control blog-details f-15 pt-2" placeholder="Password" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <ul class="list-inline mb-0">
+                                            <li class="list-inline-item">
+                                                <div class="custom-control custom-checkbox pl-0 mb-1 mt-1">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                    <label class="custom-control-label ml-1 text-muted f-15" for="customCheck1">Remember Me</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-inline-item float-right">
+                                                <p class="mb-0"><a href="" class="text-dark">Lost your password?</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-12 text-right">
+                                        <input type="submit" id="submit2" name="submit" class="btn-block btn btn-custom" value="Log In">
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- /form -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- LOG IN FORM END -->
+
+    <!-- SING IN FORM START -->
+    <section class="form-bg">
+        <div class="modal fade" id="ModalCenter1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">REGISTER</h5>
+                        <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="text-center">
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> Candidate
+                            </label>
+
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> Employer
+                            </label>
+                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-form mt-4">
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-account text-muted f-17"></i>
+                                            <input name="name1" id="name1" type="text" class="form-control blog-details f-15 pt-2" placeholder="User Name" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-email text-muted f-17"></i>
+                                            <input name="email" id="email" type="text" class="form-control blog-details f-15 pt-2" placeholder="Email" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-lock text-muted f-17"></i>
+                                            <input name="password1" id="password1" type="Password" class="form-control blog-details f-15 pt-2" placeholder="Password" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-lock text-muted f-17"></i>
+                                            <input name="confirm-password" id="confirm-password" type="Password" class="form-control blog-details f-15 pt-2" placeholder="Confirm Password" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <ul class="list-inline mb-0">
+                                            <li class="list-inline-item">
+                                                <div class="custom-control custom-checkbox pl-0 mb-1 mt-1">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                    <label class="custom-control-label ml-1 text-muted f-15" for="customCheck2">Remember Me</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-inline-item float-right">
+                                                <p class="mb-0"><a href="" class="text-dark">Lost your password?</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-12 text-right">
+                                        <input type="submit" id="submit3" name="submit" class="btn-block btn btn-custom" value="Register Now">
+                                    </div>
+                                </div>
+
+                                <div class="job-single-or mt-4 mb-4 position-relative">
+                                    <h5 class="mb-0 text-dark text-center">OR</h5>
+                                </div>
+                                <ul class="list-inline text-center">
+                                    <li class="list-inline-item mr-1">
+                                        <a href="" class="text-white">
+                                            <div class="sing-form-icon bg-primary rounded">
+                                                <h6 class="mb-0"><i class="mdi mdi-facebook mr-1"></i>Facebook</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-inline-item mr-1">
+                                        <a href="" class="text-white">
+                                            <div class="sing-form-icon bg-info rounded">
+                                                <h6 class="mb-0"><i class="mdi mdi-twitter mr-1"></i>Twitter</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-inline-item mr-1">
+                                        <a href="" class="text-white">
+                                            <div class="sing-form-icon bg-danger rounded">
+                                                <h6 class="mb-0"><i class="mdi mdi-google-plus mr-1"></i>Google</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </form>
+                            <!-- /form -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SING IN FORM END -->
+
+    <section class="bg-home">
+        <div class="bg-overlay"></div>
+        <div class="home-center">
+            <div class="home-desc-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9">
+                            <div class="home-title text-center text-white">
+                                <h1 class="mb-4" id="dynamic-txt">CREA</h1>
+                                <div class="col-lg-3 col-md-6" style="margin: 0 auto;">
+                                    <input type="submit" id="submit" name="send" class="submitBnt btn btn-custom btn-block" value="Lánzate">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end home -->
+
+    <!-- popular category start -->
+    <section class="section kw-main-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="title text-center mb-4">
+                        <h3>ERES UN/A CRACK!</h3>
+                        <p class="text-muted mb-6">TE CONECTAMOS CON STARTUPS INCREIBLES CON LAS QUE HACER HISTORIA</p>
+                        <h2 class="hastag">#MATCHINGTALENTSWITHCHALLENGES</h2>
+                        <div class="col-lg-4 col-md-6 kw-center-btn">
+                            <input type="submit" id="submit" name="send" class="btn btn-outline" value="Crear cuenta">
+                        </div>
+                        <div class="title-icon position-relative">
+                            <i class="mdi mdi-chevron-down position-relative h3 text-custom bg-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- popular category end -->
+
+    <!-- COMPANY TESTIMONIAL START -->
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <h3 class="text-dark font-weight-light">Ell@s ya están haciendo <span style="color:#3be2ab; font-weight: bold;">HISTORIA</span></h3>
+                    <div class="blog-post-border mt-3 mb-3"></div>
+                    <!-- <h5 class="text-muted mb-1">Themes code Pvt.Ltd</h5> -->
+                    <!-- <p class="mb-4 f-16"><a href="" class="text-muted"><i class="mdi mdi-earth mr-2"></i>Themescodeltd.co.in</a></p> -->
+                    <p class="text-muted f-14">AQUÍ TE CONTAMOS TODO LO RELACIONADO CON LAS STARTUPS, LO QUE SE VÉ Y LO
+                        QUE NO SE VÉ (cifras, equipos, novedades, cotilleos y muchos valores).</p>
+                    <!-- <div class="job-details-desc-item">
+                        <div class="float-left mr-3">
+                            <i class="mdi mdi-minus text-muted f-16"></i>
+                        </div>
+                        <p class="text-muted f-14 mb-1">Aenean leo ligula porttitor eu consequat eleifend enim.</p>
+                    </div> -->
+                    <!-- <div class="job-details-desc-item">
+                        <div class="float-left mr-3">
+                            <i class="mdi mdi-minus text-muted f-16"></i>
+                        </div>
+                        <p class="text-muted f-14 mb-1">Ell@s ya están haciendo historia</p>
+                    </div>
+                    <div class="job-details-desc-item">
+                        <div class="float-left mr-3">
+                            <i class="mdi mdi-minus text-muted f-16"></i>
+                        </div>
+                        <p class="text-muted f-14 mb-1">Maecenas tempus tellus sem semper libero.</p>
+                    </div> -->
+                    <hr>
+
+                    <ul class="list-inline mb-4">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn btn-outline">Espíales</a>
+                        </li>
+                        <!-- <li class="list-inline-item float-right mt-2">
+                            <ul class="list-inline bolg-post-icon mb-0">
+                                <li class="list-inline-item f-20"><a href="" class=""><i class="mdi mdi-facebook"></i></a></li>
+                                <li class="list-inline-item f-20"><a href="" class=""><i class="mdi mdi-twitter"></i></a></li>
+                                <li class="list-inline-item f-20"><a href="" class=""><i class="mdi mdi-whatsapp"></i></a></li>
+                                <li class="list-inline-item f-20"><a href="" class=""><i class="mdi mdi-instagram"></i></a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="blog-post-testi">
+                        <div class="row align-items-center">
+                            <div class="col-md-1 col-1">
+                                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                                </div>
+                            </div>
+                            <div class="col-md-11 col-11">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <div>
+                                            <img src="images/promo/1.png" alt="" class="img-fluid mx-auto d-block rounded">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COMPANY TESTIMONIAL START -->
+    
+    <!-- COMPANY TESTIMONIAL START -->
+    <section class="section kw-main-section">
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-md-row">
+                <div class="col-lg-5">
+                    <div class="blog-post-testi">
+                        <div class="row align-items-center">
+                            <div class="col-md-1 col-1">
+                                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                                </div>
+                            </div>
+                            <div class="col-md-11 col-11">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <div>
+                                            <img src="images/promo/22.jpg" alt="" class="img-fluid mx-auto d-block rounded">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="text-dark font-weight-light">Oportunidades que van a revolucionar tu historia</h3>
+                    <div class="blog-post-border mt-3 mb-3"></div>
+                    <!-- <h5 class="text-muted mb-1">Themes code Pvt.Ltd</h5>
+                    <p class="mb-4 f-16"><a href="" class="text-muted"><i class="mdi mdi-earth mr-2"></i>Themescodeltd.co.in</a></p> -->
+                    <p class="text-muted f-14">ESTAN BUSCANDO GENTE COMO TU, APASIONADA, CON GANAS Y CON MUCHA VALENTÍA, EN DEFINITIVA BUSCAN CRACKS</p>
+                    <!-- <div class="job-details-desc-item">
+                        <div class="float-left mr-3">
+                            <i class="mdi mdi-minus text-muted f-16"></i>
+                        </div>
+                        <p class="text-muted f-14 mb-1">Aenean leo ligula porttitor eu consequat eleifend enim.</p>
+                    </div>
+                    <div class="job-details-desc-item">
+                        <div class="float-left mr-3">
+                            <i class="mdi mdi-minus text-muted f-16"></i>
+                        </div>
+                        <p class="text-muted f-14 mb-1">Quisque rutrum Aenean imperdiet nisi vel augue.</p>
+                    </div>
+                    <div class="job-details-desc-item">
+                        <div class="float-left mr-3">
+                            <i class="mdi mdi-minus text-muted f-16"></i>
+                        </div>
+                        <p class="text-muted f-14 mb-1">Maecenas tempus tellus sem semper libero.</p>
+                    </div> -->
+                    <hr>
+
+                    <ul class="list-inline mb-4 text-right">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn btn-outline">Ofertas</a>
+                        </li>
+                        <!-- <li class="list-inline-item float-right mt-2">
+                            <ul class="list-inline bolg-post-icon mb-0">
+                                <li class="list-inline-item f-20"><a href="" class=""><i class="mdi mdi-facebook"></i></a></li>
+                                <li class="list-inline-item f-20"><a href="" class=""><i class="mdi mdi-twitter"></i></a></li>
+                                <li class="list-inline-item f-20"><a href="" class=""><i class="mdi mdi-whatsapp"></i></a></li>
+                                <li class="list-inline-item f-20"><a href="" class=""><i class="mdi mdi-instagram"></i></a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COMPANY TESTIMONIAL START -->
+
+    <!-- testimonial start -->
+    <section class="section kw-main-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-4">
+                        <h4>Nuestros clientes</h4>
+                        <div class="title-icon position-relative">
+                            <i class="mdi mdi-chevron-down position-relative h3 text-custom bg-white"></i>
+                        </div>
+                        <!-- <p class="text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque totam rem aperiam eaque ipsa quae ab illo inventore veritatis et</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <div class="client-images">
+                        <img src="images/employers/4.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="client-images">
+                        <img src="images/employers/5.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="client-images">
+                        <img src="images/employers/6.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="client-images">
+                        <img src="images/employers/7.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="client-images">
+                        <img src="images/employers/8.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="client-images">
+                        <img src="images/employers/9.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="client-images">
+                        <img src="images/employers/10.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="client-images">
+                        <img src="images/employers/11.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="row justify-content-center mt-5 pt-4">
+                <div class="col-lg-6">
+                    <div class="title text-center mb-4">
+                        <h4>Opinión de candidatos</h4>
+                        <p class="text-muted mb-1">minima veniam quis nostrum exercitationem Quis autem vel eum iure</p>
+                        <div class="title-icon position-relative">
+                            <i class="mdi mdi-chevron-down position-relative h3 text-custom bg-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-lg-12">
+                    <div id="owl-testi" class="owl-carousel owl-theme">
+                        <div class="item testi-box p-4 mr-3 ml-2 mb-4 bg-light position-relative">
+                            <p class="text-muted mb-5">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consecteturqui adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam</p>
+                            <div class="clearfix">
+                                <div class="testi-img float-left mr-3">
+                                    <img src="images/testi/img-1.png" alt="" class="rounded-circle">
+                                </div>
+                                <h5 class="f-18 pt-1">Kevin Stewart</h5>
+                                <p class="text-muted mb-0">Web Designer at xyz Company</p>
+                                <div class="testi-icon">
+                                    <i class="mdi mdi-format-quote-open display-2"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item testi-box p-4 mr-3 ml-2 bg-light position-relative">
+                            <p class="text-muted mb-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+                            <div class="clearfix">
+                                <div class="testi-img float-left mr-3">
+                                    <img src="images/testi/img-2.png" alt="" class="rounded-circle">
+                                </div>
+                                <h5 class="f-18 pt-1">Charles Garrett</h5>
+                                <p class="text-muted mb-0">Marketing manager at abc Company</p>
+                                <div class="testi-icon">
+                                    <i class="mdi mdi-format-quote-open display-2"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item testi-box p-4 mr-3 ml-2 bg-light position-relative">
+                            <p class="text-muted mb-5">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consecteturqui adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam</p>
+                            <div class="clearfix">
+                                <div class="testi-img float-left mr-3">
+                                    <img src="images/testi/img-3.png" alt="" class="rounded-circle">
+                                </div>
+                                <h5 class="f-18 pt-1">Perry Martinez</h5>
+                                <p class="text-muted mb-0">Marketing manager at abc Company</p>
+                                <div class="testi-icon">
+                                    <i class="mdi mdi-format-quote-open display-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- testimonial end -->
+
+    <!-- COMPANY TESTIMONIAL START -->
+    <section class="section kw-main-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <h3 class="text-dark font-weight-light">Pasos Candidato</h3>
+                    <div class="blog-post-border mt-3 mb-3"></div>
+                    <!-- <h5 class="text-muted mb-1">Themes code Pvt.Ltd</h5>
+                    <p class="mb-4 f-16"><a href="" class="text-muted"><i class="mdi mdi-earth mr-2"></i>Themescodeltd.co.in</a></p> -->
+                    <!-- <p class="text-muted f-14">Maecenas tempus tellus et condimentum that as rhoncus sem quam semper adipiscing sem neque sed ipsum Nam quam nunc blandit at luctus at id lorem maecenas nec odio et ante tincidunt tempus Donec vitae venenatis faucibus quis ante.</p> -->
+                    <div class="job-details-desc-item">
+                        <div class="float-left mr-3">
+                            <i class="mdi mdi-circle-medium text-muted f-16"></i>
+                        </div>
+                        <p class="text-muted f-14 mb-1">Paso 1: Sube tu perfil y cuéntanos quien eres</p>
+                    </div>
+                    <div class="job-details-desc-item">
+                        <div class="float-left mr-3">
+                            <i class="mdi mdi-circle-medium text-muted f-16"></i>
+                        </div>
+                        <p class="text-muted f-14 mb-1">Paso 2: Chatea con “Elenius” y deja que te conozca mejor</p>
+                    </div>
+                    <div class="job-details-desc-item">
+                        <div class="float-left mr-3">
+                            <i class="mdi mdi-circle-medium text-muted f-16"></i>
+                        </div>
+                        <p class="text-muted f-14 mb-1">Paso 3: Aplica a la oferta u ofertas que mejor encaje con tu perfil</p>
+                    </div>
+                    <div class="job-details-desc-item">
+                        <div class="float-left mr-3">
+                            <i class="mdi mdi-circle-medium text-muted f-16"></i>
+                        </div>
+                        <p class="text-muted f-14 mb-1">Paso 4: Te mantendremos informado sobre los avances del proceso</p>
+                    </div>
+                    <div class="job-details-desc-item">
+                        <div class="float-left mr-3">
+                            <i class="mdi mdi-circle-medium text-muted f-16"></i>
+                        </div>
+                        <p class="text-muted f-14 mb-1">Paso 5: Las Startups se pondrán en contacto contigo y a hacer historia</p>
+                    </div>
+                    <hr>
+
+                    <ul class="list-inline mb-4">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn btn-outline">Crea tu cuenta</a>
+                        </li>
+                        <!-- <li class="list-inline-item float-right mt-2">
+                            <ul class="list-inline bolg-post-icon mb-0">
+                                <li class="list-inline-item f-20"><a href="" class=""><i class="mdi mdi-facebook"></i></a></li>
+                                <li class="list-inline-item f-20"><a href="" class=""><i class="mdi mdi-twitter"></i></a></li>
+                                <li class="list-inline-item f-20"><a href="" class=""><i class="mdi mdi-whatsapp"></i></a></li>
+                                <li class="list-inline-item f-20"><a href="" class=""><i class="mdi mdi-instagram"></i></a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="blog-post-testi">
+                        <div class="row align-items-center">
+                            <div class="col-md-1 col-1">
+                                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                                </div>
+                            </div>
+                            <div class="col-md-11 col-11">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <div>
+                                            <img src="images/promo/4.jpg" alt="" class="img-fluid mx-auto d-block rounded">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COMPANY TESTIMONIAL START -->
+
+    <!-- COMPANY TESTIMONIAL START -->
+    <section class="section kw-main-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="blog-post-testi">
+                        <div class="row align-items-center">
+                            <div class="col-md-1 col-1">
+                                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                                </div>
+                            </div>
+                            <div class="col-md-11 col-11">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <div>
+                                            <img src="images/promo/18.jpg" alt="" class="img-fluid mx-auto d-block rounded">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <h3 class="text-dark font-weight-light">Pasos Startups</h3>
+                    <div class="blog-post-border mt-3 mb-3"></div>
+                    <!-- <h5 class="text-muted mb-1">Themes code Pvt.Ltd</h5>
+                    <p class="mb-4 f-16"><a href="" class="text-muted"><i class="mdi mdi-earth mr-2"></i>Themescodeltd.co.in</a></p>
+                    <p class="text-muted f-14">Maecenas tempus tellus et condimentum that as rhoncus sem quam semper adipiscing sem neque sed ipsum Nam quam nunc blandit at luctus at id lorem maecenas nec odio et ante tincidunt tempus Donec vitae venenatis faucibus quis ante.</p> -->
+                    <div class="job-details-desc-item">
+                        <div class="float-left mr-3">
+                            <i class="mdi mdi-circle-medium text-muted f-16"></i>
+                        </div>
+                        <p class="text-muted f-14 mb-1">Pasos 1: Sube y comparte el perfil que necesitas</p>
+                    </div>
+                    <div class="job-details-desc-item">
+                        <div class="float-left mr-3">
+                            <i class="mdi mdi-circle-medium text-muted f-16"></i>
+                        </div>
+                        <p class="text-muted f-14 mb-1">Paso 2: Analizaremos y definiremos contigo tus necesidades
+                            que van más allá de las hard skills</p>
+                    </div>
+                    <div class="job-details-desc-item">
+                        <div class="float-left mr-3">
+                            <i class="mdi mdi-circle-medium text-muted f-16"></i>
+                        </div>
+                        <p class="text-muted f-14 mb-1">Paso 3: Elenius analizará todos los perfiles con los
+                            parámetros que son importantes para tí</p>
+                    </div>
+                    <div class="job-details-desc-item">
+                        <div class="float-left mr-3">
+                            <i class="mdi mdi-circle-medium text-muted f-16"></i>
+                        </div>
+                        <p class="text-muted f-14 mb-1">Paso 4: Elenius te enviará un ranking con los mejores
+                            candidatos</p>
+                    </div>
+                    <div class="job-details-desc-item">
+                        <div class="float-left mr-3">
+                            <i class="mdi mdi-circle-medium text-muted f-16"></i>
+                        </div>
+                        <p class="text-muted f-14 mb-1">Paso 5: Disfruta del talento. Y haz historia</p>
+                    </div>
+                    <hr>
+
+                    <ul class="list-inline mb-4">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn btn-outline">Publica una oferta</a>
+                        </li>
+                        <!-- <li class="list-inline-item float-right mt-2">
+                            <ul class="list-inline bolg-post-icon mb-0">
+                                <li class="list-inline-item f-20"><a href="" class=""><i class="mdi mdi-facebook"></i></a></li>
+                                <li class="list-inline-item f-20"><a href="" class=""><i class="mdi mdi-twitter"></i></a></li>
+                                <li class="list-inline-item f-20"><a href="" class=""><i class="mdi mdi-whatsapp"></i></a></li>
+                                <li class="list-inline-item f-20"><a href="" class=""><i class="mdi mdi-instagram"></i></a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COMPANY TESTIMONIAL START -->
+
+    <!-- blog start -->
+    <!-- <section class="section bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="title text-center mb-4">
+                        <h4>News for CRACKS !</h4>
+                        <p class="text-muted mb-1">minima veniam quis nostrum exercitationem Quis autem vel eum iure</p>
+                        <div class="title-icon position-relative">
+                            <i class="mdi mdi-chevron-down position-relative h3 text-custom bg-light"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="blog-box bg-white mt-4">
+                        <div class="blog-img">
+                            <img src="images/promo/10.jpg" alt="" class="img-fluid mx-auto d-block">
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5 class="f-17 mb-3"><a href="#" class="text-dark">Aenean vulputate eleifend tellus</a></h5>
+                            <p class="text-muted f-14 mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                        </div>
+                        <div class="clearfix pl-4 pr-4">
+                            <div class="float-left">
+                                <p class="text-muted f-14"><i class="mdi mdi-calendar-today text-custom"></i> 24 Sep, 2018</p>
+                            </div>
+                            <div class="float-right">
+                                <a href="#" class="text-custom f-14">Read more..</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-box bg-white mt-4">
+                        <div class="blog-img">
+                            <img src="images/promo/13.jpg" alt="" class="img-fluid mx-auto d-block">
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5 class="f-17 mb-3"><a href="#" class="text-dark">Maecenas tempus tellus eget</a></h5>
+                            <p class="text-muted f-14 mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                        </div>
+                        <div class="clearfix pl-4 pr-4">
+                            <div class="float-left">
+                                <p class="text-muted f-14"><i class="mdi mdi-calendar-today text-custom"></i> 25 Sep, 2018</p>
+                            </div>
+                            <div class="float-right">
+                                <a href="#" class="text-custom f-14">Read more..</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-box bg-white mt-4">
+                        <div class="blog-img">
+                            <img src="images/promo/50.jpg" alt="" class="img-fluid mx-auto d-block">
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5 class="f-17 mb-3"><a href="#" class="text-dark">Vestibulum ante ipsum primis</a></h5>
+                            <p class="text-muted f-14 mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                        </div>
+                        <div class="clearfix pl-4 pr-4">
+                            <div class="float-left">
+                                <p class="text-muted f-14"><i class="mdi mdi-calendar-today text-custom"></i> 26 Sep, 2018</p>
+                            </div>
+                            <div class="float-right">
+                                <a href="#" class="text-custom f-14">Read more..</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- blog end -->
+
+    <!-- subscribe start -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="float-left position-relative notification-icon mr-2">
+                        <i class="mdi mdi-bell-outline text-custom h2"></i>
+                        <span class="badge badge-pill badge-danger">1</span>
+                    </div>
+                    <h5 class="mt-2 mb-0">New for CRACKS !</h5>
+                </div>
+                <div class="col-lg-8">
+                    <div class="subscribe">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" placeholder="Ingrese aquí su e-mail para recibir las últimas notificaciones">
+                                </div>
+                                <div class="col-md-3">
+                                    <button type="submit" class="btn btn-custom">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subscribe end -->
+
+    <!-- footer-alt start -->
+    <section class="footer-alt pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="copyright mb-0">Copyright © 2019 Kiwox. Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer-alt end -->
+
+    <!-- javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!-- selectize js -->
+    <script src="js/selectize.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/counter.int.js"></script> -->
+
+    <script src="js/app.js"></script>
+    <script src="js/home.js"></script>
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            var arr = ['CREA','REVOLUCIONA','DESAFÍA','CAMBIA','HAZ','HISTORIA'];
+            var x = 0;
+            function doStuff() {
+                
+                $('#dynamic-txt').html(arr[x++]);
+                if (x == 5) x = 0;
+            }
+            setInterval(doStuff, 700);    
+        });
+        
+    </script>
+
+</body>
+</html>
