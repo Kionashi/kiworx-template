@@ -19,6 +19,8 @@ import { StartupsComponent } from './startups/startups.component';
 import { StartupsSliderComponent } from './startups-slider/startups-slider.component';
 import { StartupsSearchComponent } from './startups-search/startups-search.component';
 import { StartupsCardComponent } from './startups-card/startups-card.component';
+import { LoginModalComponentComponent } from './login-modal-component/login-modal-component.component';
+import { SignInModalComponentComponent } from './sign-in-modal-component/sign-in-modal-component.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -42,7 +44,9 @@ const appRoutes: Routes = [
     StartupsComponent,
     StartupsSliderComponent,
     StartupsSearchComponent,
-    StartupsCardComponent
+    StartupsCardComponent,
+    LoginModalComponentComponent,
+    SignInModalComponentComponent
   ],
   imports: [
     BrowserModule,
