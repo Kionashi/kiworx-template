@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { Routes, RouterModule} from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -14,7 +15,15 @@ import { ClientStepsSectionComponent } from './client-steps-section/client-steps
 import { StartupsStepsSectionComponent } from './startups-steps-section/startups-steps-section.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { FooterComponent } from './footer/footer.component';
+import { StartupsComponent } from './startups/startups.component';
+import { StartupsSliderComponent } from './startups-slider/startups-slider.component';
+import { StartupsSearchComponent } from './startups-search/startups-search.component';
+import { StartupsCardComponent } from './startups-card/startups-card.component';
 
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'startups', component: StartupsComponent }
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,10 +38,16 @@ import { FooterComponent } from './footer/footer.component';
     ClientStepsSectionComponent,
     StartupsStepsSectionComponent,
     NewsletterComponent,
-    FooterComponent
+    FooterComponent,
+    StartupsComponent,
+    StartupsSliderComponent,
+    StartupsSearchComponent,
+    StartupsCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
