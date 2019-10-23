@@ -10,18 +10,21 @@
             </div>
             <div class="col-lg-8">
                 <div class="subscribe">
-                    <form>
+                    <form (submit)="onSubmit()">
                         <div class="row">
                             <div class="col-md-9">
-                                <input type="text" class="form-control" placeholder="Ingrese aquí su e-mail para recibir las últimas notificaciones">
+                                <input type="text" [(ngModel)]="email" name ="email" class="form-control" placeholder="Ingrese aquí su e-mail para recibir las últimas notificaciones">
                             </div>
                             <div class="col-md-3">
                                 <button type="submit" class="btn btn-custom">Enviar</button>
                             </div>
                         </div>
+                        <p class="red">{{message}}</p>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+ 

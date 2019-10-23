@@ -1,6 +1,6 @@
 <!-- LOG IN FORM START -->
 <section class="form-bg">
-    <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -11,18 +11,18 @@
                 </div>
                 <div class="modal-body">
                     <div class="custom-form mt-4">
-                        <form>
+                        <form (submit)="onSubmit()">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group blog-details-form">
                                         <i class="mdi mdi-account text-muted f-17"></i>
-                                        <input name="name" id="name" type="text" class="form-control blog-details f-15 pt-2" placeholder="Username" required="">
+                                        <input [(ngModel)]="email" name="email" id="email" type="email" class="form-control blog-details f-15 pt-2" placeholder="Correo" required="">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group blog-details-form">
                                         <i class="mdi mdi-lock text-muted f-17"></i>
-                                        <input name="Password" id="Password" type="Password" class="form-control blog-details f-15 pt-2" placeholder="Password" required="">
+                                        <input [(ngModel)]="password" name="password" id="password" type="password" class="form-control blog-details f-15 pt-2" placeholder="Contraseña" required="">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">

@@ -21,6 +21,7 @@ import { StartupsSearchComponent } from './startups-search/startups-search.compo
 import { StartupsCardComponent } from './startups-card/startups-card.component';
 import { LoginModalComponentComponent } from './login-modal-component/login-modal-component.component';
 import { SignInModalComponentComponent } from './sign-in-modal-component/sign-in-modal-component.component';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -51,7 +52,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

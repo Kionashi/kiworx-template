@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-newsletter',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./newsletter.component.css']
 })
 export class NewsletterComponent implements OnInit {
-
-  constructor() { }
-
+  
+  email : string = '';
+  message : string = ''; 
+  constructor(
+    private http: HttpClient
+    ) { }
+  
   ngOnInit() {
   }
 
+  onSubmit() {
+    if(this.email != ''){
+      this.http.post(`http://localhost:8000/api/v1/newsletters`,{'email': this.email}).subscribe(response =>{
+      })
+      this.message = 'Gracias por suscribirte!';
+    }
+  }
 }
