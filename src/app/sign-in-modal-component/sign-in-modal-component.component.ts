@@ -32,7 +32,7 @@ export class SignInModalComponentComponent implements OnInit {
         'type': this.type,
       };
   
-      this.http.post(`http://localhost:8000/api/v1/sign-in`,body).subscribe(response =>{
+      this.http.post(`http://api.kiworx.net/api/v1/sign-in`,body).subscribe(response =>{
       })
       this.message = 'Gracias por suscribirte!';
     }

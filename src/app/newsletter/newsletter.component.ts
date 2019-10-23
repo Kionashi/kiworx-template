@@ -19,7 +19,7 @@ export class NewsletterComponent implements OnInit {
 
   onSubmit() {
     if(this.email != ''){
-      this.http.post(`http://localhost:8000/api/v1/newsletters`,{'email': this.email}).subscribe(response =>{
+      this.http.post(`http://api.kiworx.net/api/v1/newsletters`,{'email': this.email}).subscribe(response =>{
       })
       this.message = 'Gracias por suscribirte!';
     }

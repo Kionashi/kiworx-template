@@ -17,8 +17,8 @@ export class LoginModalComponentComponent implements OnInit {
   }
 
   onSubmit() {
-    this.http.post(`http://localhost:8000/api/v1/login`,{'email': this.email, 'password': this.password}).subscribe(response =>{
+    this.http.post(`http://api.kiworx.net/api/v1/login`,{'email': this.email, 'password': this.password}).subscribe(response =>{
     })
-    window.location.assign('http://127.0.0.1:8000/');
+    window.location.assign('http://admin.kiworx.net/');
   }
 }

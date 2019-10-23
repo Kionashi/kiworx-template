@@ -39,11 +39,11 @@
               "src/assets/resources/js/bootstrap.bundle.min.js",
               "src/assets/resources/js/jquery.easing.min.js",
               "src/assets/resources/js/plugins.js",
-              "src/assets/resources/js/selectize.min.js",
               "src/assets/resources/js/jquery.nice-select.min.js",
               "src/assets/resources/js/owl.carousel.min.js",
               "src/assets/resources/js/home.js",
-              "src/assets/resources/js/app.js"
+              "src/assets/resources/js/app.js",
+              "src/assets/resources/js/selectize.min.js"
             ]
           },
           "configurations": {
